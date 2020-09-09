@@ -1,0 +1,17 @@
+{% extends "app/base.html" %}
+{% block title %}
+About Page
+{% endblock title %}
+{% block content %}
+<div class="jumbotron jumbotron-fluid">
+  <div class="container text-center">
+    <h1 class="display-4">To-Do List</h1>
+    <p class="lead">
+        You can use this To-Do List for your Django projects. <br/> 
+        Just follow the list.<br/>
+        If you follow this list correctly, you won't make mistakes.<br/>
+    </p>
+    <a href="{% url 'create' %}" type="button" class="btn btn-outline-success">Create To-Do List</a>
+  </div>
+</div>
+{% endblock content %}
